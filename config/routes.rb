@@ -1,4 +1,11 @@
 Enki::Application.routes.draw do
+  match '/about', :to => 'main_pages#about'
+  match '/blog', :to => 'posts#index'
+
+  get "main_pages/home"
+
+  get "main_pages/about"
+
   namespace 'admin' do
     resource :session
 
@@ -24,10 +31,12 @@ Enki::Application.routes.draw do
     get ':year/:month/:day/:slug' => 'posts#show'
   end
 
+  root :to => 'main_pages#home'
+
   scope :to => 'posts#index' do
     get 'posts.:format', :as => :formatted_posts
     get '(:tag)', :as => :posts
   end
 
-  root :to => 'posts#index'
+
 end

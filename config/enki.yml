@@ -1,6 +1,6 @@
 # Configuration options for your blog - customise to taste
 # This file contains no secret information, so can be stored in source control (unlike database.yml)
-title: Balcony Capital Blog
+title: Balcony Capital
 url:   http://balconycapitalpartners.heroku.com
 author:
   name:    Luc Robinson        # For copyright notice and ATOM feeds

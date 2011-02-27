@@ -1,34 +1,37 @@
 /* High level containers */
 body 
 { 
-  color: black;
-  
-  font: normal 12px verdana, arial, helvetica, sans-serif;
-  line-height: 1.5;
-  padding: 0px;
-  margin: 0px;
+    color: black;
+    background: #E8EBEF;
+    font: normal 12px verdana, arial, helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
 }
 
 #page_container
 {
-  position: absolute;
-  min-height: 400px;
-  
-  color: black;
-	width: 100%;
+    position: absolute;
+    min-height: 400px;
+    color: black;
+    width: 100%;
 }
 
 #content {
-	width: 900px;
-  margin: 5px auto;
-	position: relative;
-	padding-right: 55px;
+    background: #FFFFFF;
+    width: 900px;
+    margin: 0px auto;
+    position: relative;
+    padding-left: 3em;
+    padding-right: 55px;
+    padding-bottom: 4em;
 /*	display: inline;*/
 }
 
 #footer
 {
   position: relative;
+  float: right;
   font-size: 8pt;
 /*  padding-top: 5px;*/
   padding-right: 15px;
@@ -38,11 +41,64 @@ body
 /*  border-bottom: solid 1px #aaaaaa;*/
 }
 
+header img {
+    margin: 0;
+    padding: 0;
+}
+
+header hr {
+    position: absolute;
+    padding-left: 5px;
+    width: 900px;
+}
+
+header form {
+    float: right;
+    padding: 2em 0;
+}
+
+
+/* Navigation */
+nav 
+{
+    background-color: white;
+    padding: 0 0;
+    white-space: nowrap;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: .2em;
+    padding-right: 3em;
+}
+
+nav ul li a {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    float: center;
+    padding-top: 2em;
+    padding-left: 4em;
+}
+
 /* Headings */
 h1#page_heading
 {
-  font-size: 24pt;
-	color: #000 !important;
+    font-size: 24pt;
+    color: #000 !important;
 }
 
 h2
@@ -101,22 +157,23 @@ a:hover
   color: gray;
   text-decoration: underline;
 }
-
+/*
 img
 {
   border: solid 1px black;
 }
-
+*/
 /* Two columns */
 #navigation 
 {
-  position: absolute;
-  width: 15em;
-  top: -1px; 
-  right: -1px;
+    float: right;
+    position: absolute;
+    width: 15em;
+    top: 100px; 
+    right: -1px;
 
-  border: none;
-  padding: 5px;
+    border: none;
+    padding: 5px;
 }
 
 #navigation h2
