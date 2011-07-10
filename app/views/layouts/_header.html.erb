@@ -2,7 +2,7 @@
   <a href="<%= root_url %>"><img src="http://www.logomaker.com/logo-images/86156732bde5a446.gif"/></a> 
   <form method="get" id="sform" action="http://www.google.com/search">
     <div>
-      <%= link_to "Partner Login", admin_session_path %> |
+      <%= link_to "Partner Login", "auth/partners" %> |
       <%= link_to "Contact Us", '#' %> | 
       <input type="text" id="q" value="" name="q">
       <input type="hidden" name="sitesearch" value="<%= enki_config[:url] %>">

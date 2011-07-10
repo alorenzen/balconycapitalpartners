@@ -25,6 +25,8 @@ gem 'coderay'
 gem 'lesstile'
 gem 'formtastic'
 gem 'will_paginate', '= 3.0.pre2'
+gem 'omniauth'
+gem 'oa-openid'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
